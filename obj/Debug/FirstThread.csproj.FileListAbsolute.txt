@@ -1,1 +1,6 @@
 C:\Users\Delfs\Documents\Projekter\FirstThread\FirstThread\bin\Debug\FirstThread.exe.config
+C:\Users\Delfs\Documents\Projekter\FirstThread\FirstThread\obj\Debug\FirstThread.csprojResolveAssemblyReference.cache
+C:\Users\Delfs\Documents\Projekter\FirstThread\FirstThread\bin\Debug\FirstThread.exe
+C:\Users\Delfs\Documents\Projekter\FirstThread\FirstThread\bin\Debug\FirstThread.pdb
+C:\Users\Delfs\Documents\Projekter\FirstThread\FirstThread\obj\Debug\FirstThread.exe
+C:\Users\Delfs\Documents\Projekter\FirstThread\FirstThread\obj\Debug\FirstThread.pdb
