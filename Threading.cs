@@ -10,12 +10,15 @@ namespace FirstThread
     public class Threading
     {
 
-        public void PrintMessage(string message, int numberOfTimes )
+        public void PrintMessage(string message, int numberOfTimes)
         {
             for (int i = 0; i < 10; i++)
             {
                 message = Thread.CurrentThread.Name;
+                Thread.Sleep(200);
+
                 Console.WriteLine("Hello World - " + message + " - " + numberOfTimes);
+                
             }
                         
         }

@@ -69,26 +69,30 @@ namespace FirstThread
 
             // Part 4 of the assignment add names to threads and print them
 
-            //Threading th = new Threading();
-            //Thread t1 = new Thread(() => th.PrintMessage("S1", 1));
-            //Thread t2 = new Thread(() => th.PrintMessage("S2", 2));
-            //Thread t3 = new Thread(() => th.PrintMessage("s3", 3));
-            //Thread t4 = new Thread(() => th.PrintMessage("s4", 4));
-           
-            //t1.Name = "John";
-            //t2.Name = "Ole";
-            //t3.Name = "Kaj";
-            //t4.Name = "Bob";
+            Threading th = new Threading();
+            Thread t1 = new Thread(() => th.PrintMessage("S1", 1));
+            Thread t2 = new Thread(() => th.PrintMessage("S2", 2));
+            Thread t3 = new Thread(() => th.PrintMessage("s3", 3));
+            Thread t4 = new Thread(() => th.PrintMessage("s4", 4));
+
+            t1.Name = "John";
+            t2.Name = "Ole";
+            t3.Name = "Kaj";
+            t4.Name = "Bob";
+
             
-            
-            //t1.Start();
-            //t2.Start();
-            //t3.Start();
-            //t4.Start();
+
+            t1.Start();
+            t2.Start();
+            t3.Start();
+            t4.Start();
 
             //----------------------------------------------------------------
             
+            // Part 4 of the assignement Thread.sleep
+
             
+
 
 
         }
