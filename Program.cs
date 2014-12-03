@@ -40,10 +40,10 @@ namespace FirstThread
             // Part 3 of the assignment Add lambda expressions
 
             //Threading th = new Threading();
-            //Thread t1 = new Thread(() => th.PrintMessagetwo("S1"));
-            //Thread t2 = new Thread(() => th.PrintMessagetwo("S2"));
-            //Thread t3 = new Thread(() => th.PrintMessagetwo("s3"));
-            //Thread t4 = new Thread(() => th.PrintMessagetwo("s4"));
+            //Thread t1 = new Thread(() => th.PrintMessage("S1"));
+            //Thread t2 = new Thread(() => th.PrintMessage("S2"));
+            //Thread t3 = new Thread(() => th.PrintMessage("s3"));
+            //Thread t4 = new Thread(() => th.PrintMessage("s4"));
 
             //t1.Start();
             //t2.Start();
@@ -52,7 +52,19 @@ namespace FirstThread
 
             //---------------------------------------------------------------
 
-            // Part 3 of the assignment
+            // Part 3 of the assignment add numberOfTimes (Probably not done correctly)
+
+            //Threading th = new Threading();
+            //Thread t1 = new Thread(() => th.PrintMessage("S1", 1));
+            //Thread t2 = new Thread(() => th.PrintMessage("S2", 2));
+            //Thread t3 = new Thread(() => th.PrintMessage("s3", 3));
+            //Thread t4 = new Thread(() => th.PrintMessage("s4", 4));
+
+            //t1.Start();
+            //t2.Start();
+            //t3.Start();
+            //t4.Start();
+
 
 
         }
