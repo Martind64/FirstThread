@@ -10,10 +10,21 @@ namespace FirstThread
     public class Threading
     {
 
-        public void PrintMessage(string message, int numberOfTimes)
+        private string message;
+
+        public string Message
+        {
+            get { return message = Thread.CurrentThread.Name; }
+            set { message = value; }
+        }
+        
+
+        
+        public void PrintMessage(int numberOfTimes)
         {
             for (int i = 0; i < 10; i++)
             {
+                Message = message;
                 message = Thread.CurrentThread.Name;
                 Thread.Sleep(200);
 
@@ -21,6 +32,14 @@ namespace FirstThread
                 
             }
                         
+        }
+
+        public void ThreadProc(Thread thread)
+        {
+            if (Thread.CurrentThread.Name == "Thread1" && thread.ThreadState != ThreadState.Unstarted)
+            {
+                thread.Join();
+            }
         }
 
 

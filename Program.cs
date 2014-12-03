@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -9,6 +10,7 @@ namespace FirstThread
 {
     public class Program
     {
+       
         static void Main(string[] args)
         {
 
@@ -69,6 +71,8 @@ namespace FirstThread
 
             // Part 4 and 5 of the assignment add names to threads and print them and add thread.sleep
 
+            
+
             //Threading th = new Threading();
             //Thread t1 = new Thread(() => th.PrintMessage("S1", 1));
             //Thread t2 = new Thread(() => th.PrintMessage("S2", 2));
@@ -80,7 +84,7 @@ namespace FirstThread
             //t3.Name = "Kaj";
             //t4.Name = "Bob";
 
-            
+
 
             //t1.Start();
             //t2.Start();
@@ -91,8 +95,18 @@ namespace FirstThread
             
             // Part 6 of the assignement Thread.join
 
+            Threading th = new Threading();
+           
             
+            Thread t1 = new Thread(() => th.PrintMessage(1));
+            Thread t2 = new Thread(() => th.PrintMessage(2));
+            
+            
+            t1.Name = "Thread1";
+            t2.Name = "Thread2";
 
+            t1.Start();
+            t2.Start();
 
 
         }
