@@ -39,6 +39,18 @@ namespace FirstThread
 
             // Part 3 of the assignment
 
+            //Threading th = new Threading();
+            //Thread t1 = new Thread(() => th.PrintMessagetwo("S1")) ;
+            //Thread t2 = new Thread(() => th.PrintMessagetwo("S2"));
+            //Thread t3 = new Thread(() => th.PrintMessagetwo("s3"));
+            //Thread t4 = new Thread(() => th.PrintMessagetwo("s4"));
+
+            //t1.Start();
+            //t2.Start();
+            //t3.Start();
+            //t4.Start();
+
+            //---------------------------------------------------------------
 
         }
     }

@@ -15,8 +15,16 @@ namespace FirstThread
             {
                 Console.WriteLine("Hello World");
             }
+                        
+        }
 
-            
+
+        public void PrintMessagetwo(string message)
+        {
+            for (int i = 0; i < 10; i++)
+            {
+                Console.WriteLine(message);
+            }
         }
 
     }
