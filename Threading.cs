@@ -9,11 +9,11 @@ namespace FirstThread
     public class Threading
     {
 
-        public void PrintMessage()
+        public void PrintMessage(string message, int numberOfTimes)
         {
             for (int i = 0; i < 10; i++)
             {
-                Console.WriteLine("Hello World");
+                Console.WriteLine("Hello World" + message + numberOfTimes);
             }
                         
         }

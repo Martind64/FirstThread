@@ -12,7 +12,7 @@ namespace FirstThread
         static void Main(string[] args)
         {
 
-            // Part one of the assignment
+            // Part one of the assignment Add a print method an call it from the class
             //Threading th = new Threading();
 
             //th.PrintMessage();
@@ -22,9 +22,9 @@ namespace FirstThread
 
             //-------------------------------------------------------------
 
-            // Part 2 of the assignment
-            //Threading th = new Threading();
+            // Part 2 of the assignment Add Threads
 
+            //Threading th = new Threading();
             //Thread t = new Thread(th.PrintMessage);
             //Thread t2 = new Thread(th.PrintMessage);
             //Thread t3 = new Thread(th.PrintMessage);
@@ -37,10 +37,10 @@ namespace FirstThread
             
             //--------------------------------------------------------------
 
-            // Part 3 of the assignment
+            // Part 3 of the assignment Add lambda expressions
 
             //Threading th = new Threading();
-            //Thread t1 = new Thread(() => th.PrintMessagetwo("S1")) ;
+            //Thread t1 = new Thread(() => th.PrintMessagetwo("S1"));
             //Thread t2 = new Thread(() => th.PrintMessagetwo("S2"));
             //Thread t3 = new Thread(() => th.PrintMessagetwo("s3"));
             //Thread t4 = new Thread(() => th.PrintMessagetwo("s4"));
@@ -51,6 +51,9 @@ namespace FirstThread
             //t4.Start();
 
             //---------------------------------------------------------------
+
+            // Part 3 of the assignment
+
 
         }
     }
