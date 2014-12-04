@@ -34,7 +34,7 @@ namespace FirstThread
                         
         }
 
-        // Tried to make a join method
+        // Tried to make a join method doesn't work yet
 
         public void ThreadProc(Thread thread)
         {
