@@ -24,8 +24,8 @@ namespace FirstThread
         {
             for (int i = 0; i < 10; i++)
             {
-                Message = message;
-                message = Thread.CurrentThread.Name;
+
+                message = Message;
                 Thread.Sleep(200);
 
                 Console.WriteLine("Hello World - " + message + " - " + numberOfTimes);
