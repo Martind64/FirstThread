@@ -9,7 +9,7 @@ namespace FirstThread
 {
     public class Threading
     {
-
+        // Set message to hold Thread.CurrentThread.Name
         private string message;
 
         public string Message
@@ -19,7 +19,7 @@ namespace FirstThread
         }
         
 
-        
+        // Print method  that prints the names of the threads + and int
         public void PrintMessage(int numberOfTimes)
         {
             for (int i = 0; i < 10; i++)
@@ -33,6 +33,8 @@ namespace FirstThread
             }
                         
         }
+
+        // Tried to make a join method
 
         public void ThreadProc(Thread thread)
         {
