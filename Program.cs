@@ -10,8 +10,9 @@ namespace FirstThread
 {
     public class Program
     {
+        
        
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
 
             // Part one of the assignment Add a print method an call it from the class
@@ -96,19 +97,28 @@ namespace FirstThread
             // Part 6 of the assignement Thread.join
 
             Threading th = new Threading();
+
+
+            th.mainThread = Thread.CurrentThread;
+            th.thread1 = new Thread(th.ThreadProc);
+            th.thread1.Name = "Thread1";
+            th.thread1.Start();
+
+
+            th.thread2 = new Thread(th.ThreadProc);
+            th.thread2.Name = "Thread2";
+            th.thread2.Start();
+            
            
-            
-            Thread t1 = new Thread(() => th.PrintMessage(1));
-            Thread t2 = new Thread(() => th.PrintMessage(2));
+
             
             
-            t1.Name = "Thread1";
-            t2.Name = "Thread2";
-
-            t1.Start();
-            t2.Start();
-
-
+          
+            
         }
+
+        
+   
+    
     }
 }

@@ -7,8 +7,11 @@ using System.Threading.Tasks;
 
 namespace FirstThread
 {
+
     public class Threading
     {
+        public Thread mainThread, thread1, thread2;
+
         // Set message to hold Thread.CurrentThread.Name
         private string message;
 
@@ -24,23 +27,37 @@ namespace FirstThread
         {
             for (int i = 0; i < 10; i++)
             {
-
                 message = Message;
                 Thread.Sleep(200);
 
                 Console.WriteLine("Hello World - " + message + " - " + numberOfTimes);
                 
+                
             }
                         
         }
 
-        // Tried to make a join method doesn't work yet
+        // Made Join Work
 
-        public void ThreadProc(Thread thread)
+        public void ThreadProc()
         {
-            if (Thread.CurrentThread.Name == "Thread1" && thread.ThreadState != ThreadState.Unstarted)
+
+            try
             {
-                thread.Join();
+                if (Thread.CurrentThread.Name == "Thread1" 
+                    && thread2.ThreadState != ThreadState.Unstarted)
+                
+                    thread2.Join();
+                    Thread.Sleep(200);
+
+                    Console.WriteLine("\nCurrent thread: {0}", Thread.CurrentThread.Name);
+                    Console.WriteLine("Thread1: {0}", thread1.ThreadState);
+                    Console.WriteLine("Thread2: {0}\n", thread2.ThreadState);
+                
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
             }
         }
 
